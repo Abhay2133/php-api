@@ -1,0 +1,86 @@
+input{
+	outline : none;
+	border: 1px solid;
+	padding : 5px;
+}
+
+button
+{
+	padding : 5px;
+	outline : none;
+	border-radius : 5px;
+}
+
+#sp
+{
+  display: -ms-inline-grid;
+  grid-template-columns: auto auto;
+}
+
+/*
+Floating Placeholder
+*/
+
+form {
+  width: 30rem;
+  display: block;
+  margin: 3rem auto;
+  padding: 3rem;
+  border: 10px solid #999;
+}
+
+.floatingLabel {
+  display: block;
+  transform: translate(0, -2.75rem);
+  text-align: left;
+  padding-left : 5px
+}
+
+input {
+  margin-top: 1.5rem;
+  padding: 0.25rem;
+  border: none;
+  border-bottom: 2px solid #111;
+  transition: border-color 0.2s ease;
+  background: rgba(0,0,0,0);
+}
+
+input:focus {
+    outline: none;
+    border-color: green;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #111;
+  background-color: #111;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+@supports (not (-ms-ime-align:auto)) {
+    .floatingLabel {
+      color: #999;
+      transform: translate(0.25rem, -1.5rem);
+      transition: all 0.2s ease-out;
+    }
+    
+    
+    input:not(:placeholder-shown) + .floatingLabel {
+      color: #111;
+      transform: translate(0, -2.75rem);
+      font-weight: 500;
+      font-size: 15px;
+    }
+}
+
+/* 
+SanckBar
+*/
+
+#snackbar
+{
+	position : absolute;
+	bottom : 0px;
+}

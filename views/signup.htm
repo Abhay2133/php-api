@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    	<base href="http://localhost:8080/" target="_self">
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title> PHP & nodeJS servers </title>
+       <meta name="description" content="PHP testground">
+       <meta name="author" content="Abhay"> 
+
+  <!--    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
+       <script src="./public/eruda.js" onload = "eruda.init()"></script>  
+       <link rel="stylesheet" href="public/styles.css">
+</head>
+
+<body class="m-n ff-calibri">
+	
+	<H2 class = "p m-n m-B-xl bg-#444 t-c clr-#fff">
+		PHP server
+	</h2>
+	
+
+<div class="t-c ">
+	<div class="t-c d-ib m-n bg-#E9E9E9 rc p-20px,50px">
+		<h3 class="m-n m-B"> Sign Up </h3>
+		<input name="uid" id="uid" placeholder=" " align="center" onchange="hasuid()" oninput="hasuid()">
+		<label class="floatingLabel" for="uid"> Username </label>
+		<br>
+		<div id="uid_info" class="pos-rel top-n30px left-10px t-lft f-12p vcblt-hdn">Abhay</div>
+		<input class="m-T-s" type="password" id = "pswrd" name="pswrd" placeholder=" " align="center">
+		<label class="floatingLabel" for="pswrd"> Password </label>
+		<br>
+		<div class="d-ig m-T-s" id="sp">
+			<div class="f-c-c">
+		  	  <input id="ckbx" type="checkbox" class="d-b m-n" onclick="togglePswrd(this)" />
+			</div>
+		  <label for="ckbx" class="f-c-c p-L-s f-13p"> Show Password</label>
+		</div>
+		<br><br>
+		<button onclick="pop(this); signUp()" class="m-T p-10px,15px bnw bdr">Sign Up</button>
+		
+	</div>
+</div>
+<div id="cna" class="p t-c">
+	Already an Account ?	<br>
+	<a href="views/login.htm"> Login </a>
+</div>
+		<div id="data" class="t-c f-13p p-T" onclick="cls(this)"></div>
+	
+<div id="snackbar" class="p p-L-xl bg-#444 clr-#fff w-100%  d-no" onclick="slidedwn(this)"> SnackBar </div>
+	
+<script src="./public/modules.js">
+</script>
+<script src="./public/ajax.js">
+</script>
+<script src="./public/main.js">
+</script>
+<script src="./public/ass.js">
+</script>
+
+</body>
+</html>
