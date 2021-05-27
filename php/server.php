@@ -21,7 +21,7 @@
 	{
 		$token = bin2hex(random_bytes(10));
 		$res["token"] = $token;
-	}
+	} 
 	else
 	if( $_REQUEST["login"] )
 	{
@@ -38,7 +38,7 @@
 				$res["update"] = $users->update("loginToken = \"$token\", lastLoginTime = $time", "uid = \"$uid\"");
 				$res["token"] = $token;
 			}
-		}
+		} 
 		else
 			$res["data"]  = "Wrong Username !";
 	}
